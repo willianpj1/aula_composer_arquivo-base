@@ -1,6 +1,7 @@
 <?php
 
-$app->get('/home', function ($request, $response,) {
-    echo "Pagina inicial do sistema de cliente";
-    die;
-});
+use app\controller\Home;
+
+$app->get('/', Home::class . ':home');
+
+$app->get('/home', Home::class . ':home');
