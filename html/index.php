@@ -14,6 +14,7 @@ require __DIR__ . '/../app/helper/setting.php';
 
 require __DIR__ . '/../app/route/route.php';
 
+
 /*$dir = __DIR__ . '/../app/route/route.php';
 if (file_exists($dir)) {
     echo "o arquivo de rotas existe";

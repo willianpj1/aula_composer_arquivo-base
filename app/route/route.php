@@ -1,6 +1,7 @@
 <?php
 
 use app\controller\Home;
+use app\controller\User;
 
 $app->get('/', Home::class . ':home');
 

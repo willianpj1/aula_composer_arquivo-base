@@ -1,0 +1,41 @@
+{% extends "main.html" %}
+{% block main %}
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header">
+            <h4 class="mb-0">Cadastrar Usuário</h4>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="nome" class="form-label fw-bold">
+                            <i class="fa-solid fa-address-card"></i> 
+                            Nome
+                        </label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="sobrenome" class="form-label fw-bold">
+                            <i class="fa-solid fa-address-card"></i> 
+                            Sobrenome
+                        </label>
+                        <input type="text" class="form-control" id="sobrenome" name="sobrenome"
+                            placeholder="Digite o sobrenome" required>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-success me-2">
+                        <i class="bi bi-person-plus"></i> Cadastrar
+                    </button>
+                    <a href="/home" class="btn btn-danger">
+                        Cancelar
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
