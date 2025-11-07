@@ -1,8 +1,18 @@
 <?php
 
 use Slim\Factory\AppFactory;
+use app\database\builder\InsertQuery;
 
 require __DIR__ . '/../vendor/autoload.php';
+
+$Values = [
+    'nome_fantasia' => 'Gambiarra & CIA',
+    'cpf_cnpj' => '123',
+    'rg_ie' => '321'
+];
+
+InsertQuery::table('empresa')->save($Values);
+die;
 
 $app = AppFactory::create();
 
